@@ -13,7 +13,12 @@ const VRBoxesScene = () => (
       <Box position={[-10, 0, 0]} />
       <Box position={[0, 10, 0]} />
       <Box position={[0, -10, 0]} />
-      <OrbitControls />
+      <OrbitControls
+        addEventListener={undefined}
+        hasEventListener={undefined}
+        removeEventListener={undefined}
+        dispatchEvent={undefined}
+      />
     </VRCanvas>
   </>
 );
