@@ -12,6 +12,9 @@ export default function IndexPage() {
       <Link href="/vr-boxes">
         <a>VR Boxes Example</a>
       </Link>
+      <Link href="/vr-flat">
+        <a>VR Flat Example</a>
+      </Link>
     </div>
   );
 }
