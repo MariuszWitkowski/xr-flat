@@ -13,12 +13,15 @@ export const LivingRoom = () => {
   );
 
   return (
-    <Merged castShadow receiveShadow meshes={meshes}>
+    <Merged meshes={meshes}>
       {(models) => (
         <group>
-          <models.Seat color={'sandybrown'} position={[-0.35, 0, 0.7]} />
+          <models.Seat color={'sandybrown'} position={[3, 0.5, 0.7]} />
           {/* {console.log({ models })} */}
-          <models.Sofa position={[-0.35, 1, 0.7]} />
+          <models.Sofa
+            position={[1, 0, 3]}
+            rotation={[THREE.Math.degToRad(-90), 0, 0]}
+          />
         </group>
       )}
     </Merged>
